@@ -66,26 +66,6 @@ attacking the player's last attacker.
 None combat oriented animals (groundhog, rabbit) will simply try to run away from any enemy and
 hide themselves.  
   
-**Special Abilities:**
-
-**Hamstring Biting (Dog):**  
-Once activated the dog will try to bit its opponent's hamstring.
-For the next two rounds, every successful melee hit will reduce the opponent's movement speed by
-50% for two rounds. (No save allowed.)
-**Defensive Howl (Wolf):**  
-The wolf howls to rally up the defense and awareness of all party members.
-Every party member within 10 yards will gain +2 AC for 5 rounds.  
-**Alertness (Groundhog):**  
-Once activated the groundhog will focus all of its attention on watching out for surprise attacks and
-utter warning sounds whenever a party member is about to get attacked.
-During the one round watch all party members are immune to backstabbing.
-**Zigzag (Rabbit):**  
-Once activated the rabbit will circle around a target in a very fast zigzag course. If the target fails a
-save vs. breath weapons it will be confused for two rounds.
-**Web (Spider):**  
-On use the spider will try to trap a target in its web. If the target fails a -2 save vs. paralyze it will be
-trapped in the spider's web, rendered completely helpless for one round. 
-  
 **Requirements:**  
 - BG2 including ToB with the latest official patch ( SoA only install might work, but has not been
 tested yet.) OR BG1EE, SoD, BG2EE, EET, IWD1EE
