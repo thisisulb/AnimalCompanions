@@ -1,0 +1,11 @@
+IF
+  Global("UBRPETSTART","GLOBAL",0)
+OR(2)
+  Class(Player1,RANGER_ALL)
+  Class(Player1,DRUID_ALL)
+THEN 
+RESPONSE #100
+  SetGlobal("UBRPETSTART","GLOBAL",1)
+  ApplySpellRES("UBRPETZ",Player1)
+  Continue()
+END   

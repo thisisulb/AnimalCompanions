@@ -1,0 +1,349 @@
+/////////////////////////////////////////////////////////////////////////////////
+//Variables Used In This Script:
+//
+//UBRPETLVL: Level Up Counter [0/1/2/3/4/5/6/7/8]
+//
+//UBRPET1, ...,UBRPET9: What Kind Of Pet Has Been Chosen [0/1]
+//
+//UBRPETDEAD: Pet 'Fake Dead' [0/1]
+//
+//UBRPETAI: Payer AI Choice [0/1/2] (0=AI On / 1=Only Combat AI / 2=NO AI)
+//
+//UBRPETHIDE: Time For Stealth Action
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+///////////////////////
+//Fake Death - Block //
+///////////////////////
+
+
+IF
+HPLT(Myself,2)
+Global("UBRPETDEAD","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETDEAD","GLOBAL",1)
+ReallyForceSpellRES("UBRPETDD",Myself) // Heal Me And Spawn Fake Body
+DisplayStringHead(Player1,@4) // Your animal companion died!
+DestroySelf()
+END
+
+
+
+//////////////////////////
+//Fake Level Up - Block //
+//////////////////////////
+
+// Player Lvl 6
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",0)
+XPGT(Player1,49999) 
+XPLT(Player1,450000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",1)
+ActionOverride(Player1,ApplySpellRES("UBRPETX",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",0) 
+!XPLT(Player1,450000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",1)
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+// Player Lvl 9
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",1)
+XPGT(Player1,449999) 
+XPLT(Player1,1350000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",2)
+ActionOverride(Player1,ApplySpellRES("UBRPETX",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",1) 
+!XPLT(Player1,1350000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",2)
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+// Player Lvl 12
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",2)
+XPGT(Player1,1349999) 
+XPLT(Player1,2250000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",3)
+ActionOverride(Player1,ApplySpellRES("UBRPETX",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",2) 
+!XPLT(Player1,2250000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",3)
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+// Player Lvl 15
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",3)
+XPGT(Player1,2249999) 
+XPLT(Player1,3150000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",4)
+ActionOverride(Player1,ApplySpellRES("UBRPETP",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",3) 
+!XPLT(Player1,3150000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",4)
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+// Player Lvl 18
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",4)
+XPGT(Player1,3149999) 
+XPLT(Player1,4050000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",5)
+ActionOverride(Player1,ApplySpellRES("UBRPETP",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",4) 
+!XPLT(Player1,4050000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",5)
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+// Player Lvl 21
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",5)
+XPGT(Player1,4049999) 
+XPLT(Player1,4950000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",6)
+ActionOverride(Player1,ApplySpellRES("UBRPETP",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",5) 
+!XPLT(Player1,4950000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",6)
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+// Player Lvl 24
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",6)
+XPGT(Player1,4949999) 
+XPLT(Player1,7650000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",7)
+ActionOverride(Player1,ApplySpellRES("UBRPETP",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",6) 
+!XPLT(Player1,7650000)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",7)
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+// Player Lvl 33
+
+IF
+CombatCounter(0)
+Global("UBRPETLVL","GLOBAL",7)
+XPGT(Player1,7649999)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETLVL","GLOBAL",8)
+ActionOverride(Player1,ApplySpellRES("UBRPETP",Myself))
+ApplySpellRES("UBRPETU",Myself)
+DisplayStringHead(Player1,@5) // Your animal companion has gained in power!
+END
+
+
+
+////////////////////////
+//AI No Combat - Block//
+////////////////////////
+
+IF
+CombatCounter(0)
+ActionListEmpty()
+!Range(PLAYER1,15)
+!StateCheck(Player1,STATE_INVISIBLE)
+!StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
+!See(NearestEnemyOf(Myself))
+Global("UBRPETAI","GLOBAL",0)
+THEN
+RESPONSE #100
+MoveToObject(PLAYER1)
+END
+
+
+// stealth pets only part
+
+IF
+CombatCounter(0)
+ActionListEmpty()
+Global("UBRPETAI","GLOBAL",0)
+!RealGlobalTimerNotExpired("UBRPETHIDE","LOCALS")
+!StateCheck(Myself,STATE_INVISIBLE)
+!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+!See(NearestEnemyOf(Myself))
+OR(3)
+Global("UBRPET3","GLOBAL",1)
+Global("UBRPET8","GLOBAL",1)
+Global("UBRPET9","GLOBAL",1)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("UBRPETHIDE","LOCALS",30)
+Hide()
+END
+
+/////////////////////
+//AI Combat - Block//
+/////////////////////
+
+
+// combat pets part
+
+IF
+ActionListEmpty()
+GlobalLT("UBRPETAI","GLOBAL",2)
+!Global("UBRPET8","GLOBAL",1)
+!Global("UBRPET9","GLOBAL",1)
+HPPercentGT(Player1,30)
+OR(5)
+See(FifthNearestEnemyOf(Myself))
+See(FourthNearestEnemyOf(Myself))
+See(ThirdNearestEnemyOf(Myself))
+See(SecondNearestEnemyOf(Myself))
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+Attack(LastSeenBy(Myself))
+END
+
+IF
+ActionListEmpty()
+GlobalLT("UBRPETAI","GLOBAL",2)
+!Global("UBRPET8","GLOBAL",1)
+!Global("UBRPET9","GLOBAL",1)
+HPPercentLT(Player1,30)
+See(LastAttackerOf(Player1))
+THEN
+RESPONSE #100
+Attack(LastSeenBy(Myself))
+END
+
+// stealth pets
+
+IF
+ActionListEmpty()
+GlobalLT("UBRPETAI","GLOBAL",2)
+See(NearestEnemyOf(Myself))
+Range(NearestEnemyOf(Myself),75)
+!StateCheck(Myself,STATE_INVISIBLE)
+!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+OR(2)
+Global("UBRPET8","GLOBAL",1)
+Global("UBRPET9","GLOBAL",1)
+THEN
+RESPONSE #100
+RunAwayFrom(NearestEnemyOf(Myself),75)
+END
+
+IF
+ActionListEmpty()
+GlobalLT("UBRPETAI","GLOBAL",2)
+See(NearestEnemyOf(Myself))
+!Range(NearestEnemyOf(Myself),50)
+!RealGlobalTimerNotExpired("UBRPETHIDE","LOCALS")
+!StateCheck(Myself,STATE_INVISIBLE)
+!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+OR(2)
+Global("UBRPET8","GLOBAL",1)
+Global("UBRPET9","GLOBAL",1)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("UBRPETHIDE","LOCALS",30)
+Hide()
+END
+
+
+

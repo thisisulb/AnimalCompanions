@@ -1,0 +1,367 @@
+/////////////////////////////////////////////////////////////////////////////////
+//Variables Used In This Script:
+//
+//UBRPETSETUP(LOCALS): Whether 'Fake Death Creature' Is Disguised  [0/1]
+//
+//UBRPET1, ...,UBRPET9: What Kind Of Pet Has Been Chosen [0/1]
+//
+//UBRPETDEAD -> Pet 'Fake Dead' [0/1]
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+///////////////////////////////////////////////////////////////
+//Disguise 'Fake Death Creature' as Animal Companion - Block //
+///////////////////////////////////////////////////////////////
+
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET1","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET1D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET2","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET2D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET3","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET3D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET4","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET4D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET5","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET5D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET6","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET6D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET7","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET7D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET8","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET8D","UBRPETD",Myself)
+END
+
+IF
+Global("UBRPETSETUP","LOCALS",0)
+Global("UBRPET9","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSETUP","LOCALS",1)
+TakeItemReplace("UBRPET9D","UBRPETD",Myself)
+END
+
+
+
+/////////////////////////////////////////////////////////
+//Check for 'Raise Dead' and 'Mass Raise Dead' - Block //
+/////////////////////////////////////////////////////////
+
+
+IF
+Global("UBRPET1","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET1",Myself)
+ActionOverride("UBRPET1", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET2","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET2",Myself)
+ActionOverride("UBRPET2", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET3","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET3",Myself)
+ActionOverride("UBRPET3", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET4","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET4",Myself)
+ActionOverride("UBRPET4", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET5","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET5",Myself)
+ActionOverride("UBRPET5", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET6","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET6",Myself)
+ActionOverride("UBRPET6", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET7","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET7",Myself)
+ActionOverride("UBRPET7", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET8","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET8",Myself)
+ActionOverride("UBRPET8", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET9","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+OR(2)
+SpellCastOnMe([ANYONE],CLERIC_RAISE_DEAD)
+SpellCastPriest([PC],CLERIC_MASS_RAISE_DEAD)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET9",Myself)
+ActionOverride("UBRPET9", ReallyForceSpellRES("UBRPETD",Myself)) // Set HP to 5 Spell
+DisplayStringHead(Player1,@3) // Your animal companion is still injured and needs healing!
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+//Check for 'Resurrection', 'Bhaal-Power Resurrection', 'Rod of Resurrection' - Block //
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+IF
+Global("UBRPET1","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET1",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET2","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET2",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET3","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET3",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET4","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET4",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET5","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET5",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET6","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET6",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET7","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET7",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET8","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET8",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+
+IF
+Global("UBRPET9","GLOBAL",1)
+Global("UBRPETDEAD","GLOBAL",1)
+SpellCastOnMe([ANYONE],CLERIC_RESURRECTION)
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET9",Myself)
+SetGlobal("UBRPETDEAD","GLOBAL",0)
+SetGlobal("UBRPETSETUP","LOCALS",0)
+DestroySelf()
+END
+

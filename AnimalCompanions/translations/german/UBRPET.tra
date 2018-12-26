@@ -1,0 +1,82 @@
+//UBRPET0.BAF
+@1 = ~Euer Tiergefährte ist tot.~       // ~Your animal companion is dead.~
+@2 = ~Euer Tiergefährte ist zurückgekehrt!~       // ~Your animal companion has returned!~
+
+//UBRPETD.BAF
+@3 = ~Euer Tiergefährte ist immer noch verletzt und benötigt Heilung!~       // ~Your animal companion is still injured and needs healing!~
+
+//UBRPET.BAF
+@4 = ~Euer Tiergefährte ist gestorben!~       // ~Your animal companion died!~
+@5 = ~Die Fähigkeiten Eures Tiergefährten haben sich verbessert!~       // ~Your animal companion has gained in power!~
+
+//UBRPET.D
+@6 = ~Als Ihr in die Augen Eures Tiergefährten blickt, erkennt Ihr Sympathie und Neugier, aber keine Angst.~       // ~As you look in the eyes of your new animal companion, you see curiosity and sympathy but no fear.~
+@7 = ~Es ist an der Zeit Eurem neuen Freund einen Namen zu geben, und Ihr müsst nicht lange nachdenken bevor Euch genau der richtige Name einfällt...~       // ~It is time to give your new friend a name and you certainly don't have to think long before you come up with the right one ...~
+@8 = ~%name%, das ist ab jetzt dein Name.~       // ~%name% is what you be called from now on.~
+@9 = ~Von nun an wirst du %name% heißen. Gefällt dir das, mein großer Freund?~       // ~From now on you will be called %name%. Do you like that, my big friend?~
+@10 = ~Von nun an werde ich dich %name% nennen. Gefällt dir das, mein geflügelter Freund?~       // ~From now on I'll call you %name%. Do you like that, my winged friend?~
+@11 = ~Von nun an werde ich dich %name% nennen. Gefällt dir das, kleiner Freund?~       // ~From now on I'll call you %name%. Do you like that, little friend?~
+@12 = ~Als Ihr Euch Eurem Tiergefährten nähert...~       // ~As you approach your animal companion ...~
+@13 = ~%name% hebt den Kopf in einer Geste, die Ihr nur als Zustimmung interpretieren könnt.~       // ~%name%'s head rises in what you think to be a gesture of approval.~
+@14 = ~Gut, nachdem dies erledigt ist, gibt es noch etwas anderes was ich von dir will...~       // ~Fine. Now that this is settled, there is something else I wanted from you...~
+@15 = ~Da ist noch etwas anderes %name%...~       // ~Now, listen %name%, there's something else I want...~
+@16 = ~Großartig, dann lass uns weiter gehen.~       // ~Great, lets get going then.~
+@17 = ~Dann ist es Zeit aufzubrechen.~       // ~Time to go then.~
+@18 = ~%name% neigt den Kopf zur Seite und erwartet Eure Instruktionen.~       // ~%name% tilts it's head and waits for your instructions.~
+@19 = ~Ich will, dass du dich ganz natürlich verhältst. Tu einfach was du normalerweise tun würdest, ob im Kampf oder nicht.~       // ~I want you to behave all natural. Do as you normally would do, whether we are in combat or not.~
+@20 = ~Ich will, dass du dich weiterhin ganz natürlich verhältst und einfach tust was du normalerweise tun würdest, ob im Kampf oder nicht.~       // ~I want you to keep behaving all natural and do as you normally would do, whether we are in combat or not.~
+@21 = ~Ich will, dass du nur das tust, was ich dir sage, zumindest während wir nicht im Kampf sind. Es ist in Ordnung, wenn du dich normal verhältst, solange wir am Kämpfen sind.~       // ~I want you to only do what I tell you to do, at least while we are not in combat. It is OK for you to behave naturally while we are in combat, though.~
+@22 = ~Ich will, dass du weiterhin nur das tust, was ich dir sage, zumindest während wir nicht im Kampf sind. Es ist in Ordnung, wenn du dich während wir kämpfen weiterhin normal verhältst.~       // ~I want you to keep doing only what I tell you to do, at least while we are not in combat. It is still OK for you to behave naturally while we are in combat, though.~
+@23 = ~Ich will, dass du nur das tust, was ich dir sage. Egal ob wir am kämpfen sind oder nicht, du tust nur was ich dir sage.~       // ~I want you to only do what I tell you, whether we are in combat or not. No matter what happens, you will only do as I tell you.~
+@24 = ~Ich will, dass du weiterhin nur das tust, was ich dir sage. Egal ob wir am kämpfen sind oder nicht, du tust nur was ich dir sage.~       // ~I want you to keep doing only what I tell you to do, whether we are in combat or not.~
+@25 = ~%name% sieht Euch zuversichtlich an und scheint neugierig darauf zu sein, was Ihr als nächstes von Eurem loyalen Freund wollen könntet.~       // ~%name% looks at you with a confident expression and seems to be curious as to what you might want next from your loyal friend.~
+@26 = ~Komm her %name%, ich will dich ein wenig streicheln.~       // ~Come here %name%, I want to pet you a little.~
+@27 = ~Ist alles in Ordnung mit dir, mein großer Freund?~       // ~Is everything alright with you, my big friend?~
+@28 = ~Ist alles in Ordnung mit dir, mein geflügelter Freund?~       // ~Is everything alright with you, my winged friend?~
+@29 = ~Ist alles in Ordnung mit dir, kleiner Freund?~       // ~Is everything alright with you, little friend?~
+@30 = ~Ich möchte dir ein paar Anweisungen bezüglich deines Verhaltens geben %name%.~       // ~I would like to give you a few instructions about your behavior %name%.~
+@31 = ~Hör zu %name%, ich möchte dass du dich eine weile von der Gruppe auf Distanz hältst. Bleib einfach in Hörreichweite und ich werde dich rufen, wenn ich dich brauche.~       // ~Listen %name%, I want you to keep your distance from the group for a while. Just stay within hearing range and I will call, once I need you back here.~
+@32 = ~Ihr streichelt Euren Tiergefährten für eine Weile, was %name% sehr zu gefallen scheint.~       // ~You pet your animal friend for a while, much to %name%'s enjoyment as it seems.~
+@33 = ~Da ist noch etwas anderes, was ich von dir will...~       // ~There is something else I wanted from you...~
+@34 = ~Das war spaßig, Zeit aufzubrechen.~       // ~That was fun, lets get going then.~
+@35 = ~%name% sieht Euch für einen kurzen Augenblick mit traurigen Augen an, dreht sich dann jedoch herum und entfernt sich zügig von Euch.~       // ~%name% looks at you with a sad expression for a moment but then turns around and quickly disappears out of your sight.~
+
+//UBRPETA.D
+@36 = ~Ihr beschließt, dass es an der Zeit ist nach einem richtigen Tiergefährten für euch zu suchen.~       // ~You decide that it is time to search for a proper animal companion of your own.~
+@37 = ~Als Ihr anfangt das Areal nach Tierspuren abzusuchen, ...~       // ~As you are about to inspect the area for animal tracks ...~
+@38 = ~... realisiert Ihr, dass Euch vermutlich noch die Erfahrung fehlt um eine dauerhafte Bindung mit einem Tier einzugehen und beschließt daher es zu einem späteren Zeitpunkt noch einmal zu versuchen.~       // ~... you realize that you are lacking the experience to form a lasting bond with an animal and decide to try it again once you have more experience.~
+@39 = ~... realisiert Ihr, dass es in diesem Areal keine geeigneten Tiere gibt und beschließt auf eine bessere Gelegenheit zu warten.~       // ~... you realize that there are no suitable animals in this area and decide to wait for a better opportunity.~
+@40 = ~... entdeckt Ihr die Fährte eines Braunbären und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a brown bear and decide that this is exactly the kind of animal you are looking for.~
+@41 = ~... entdeckt Ihr die Fährte eines Wolfes und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a wolf and decide that this is exactly the kind of animal you are looking for.~
+@42 = ~... entdeckt Ihr die Fährte eines Panthers und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a panther and decide that this is exactly the kind of animal you are looking for.~
+@43 = ~... entdeckt Ihr die Fährte eines Leoparden und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a leopard and decide that this is exactly the kind of animal you are looking for.~
+@44 = ~... entdeckt Ihr die Fährte eines Hundes und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a dog and decide that this is exactly the kind of animal you are looking for.~
+@45 = ~... entdeckt Ihr die Fährte eine Riesenspinne und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a giant spider and decide that this is exactly the kind of animal you are looking for.~
+@46 = ~... entdeckt Ihr die Spuren eines jungen Lindwurms und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a young wyvern and decide that this is exactly the kind of animal you are looking for.~
+@47 = ~... entdeckt Ihr die Fährte eines Murmeltiers und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht.~       // ~... you discover the tracks of a groundhog and decide that this is exactly the kind of animal you are looking for.~
+@48 = ~... entdeckt Ihr die Fährte eines Hasen und beschließt, dass dies genau die Art von Tier ist, nach der Ihr sucht~       // ~... you discover the tracks of a rabbit and decide that this is exactly the kind of animal you are looking for.~
+@49 = ~... entscheidet Ihr Euch dafür im Moment doch nicht nach einem Tiergefährten zu suchen.~       // ~... you decide to not look for an animal companion right now.~
+@50 = ~Ihr imitiert das Brüllen eines Braunbären und schon nach kurzer Zeit taucht ein stark und wild aussehender Braunbär aus dem Unterholz auf.~       // ~You mimic the roar of a brown bear and after only a short while a strong and fierce looking bear emerges from the undergrowth...~
+@51 = ~Ihr imitiert das Heulen eines Wolfes und schon nach kurzer Zeit taucht ein stark und flink aussehender Wolf aus dem Unterholz auf.~       // ~You mimic the howling of a wolf and after only a short while a strong and swift looking wolf emerges from the undergrowth...~
+@52 = ~Ihr imitiert das Brüllen eines Panthers und schon nach kurzer Zeit taucht ein stark und flink aussehender Panter aus dem Unterholz auf.~       // ~You mimic the roar of a panther and after only a short while a strong and swift looking panther emerges from the undergrowth...~
+@53 = ~Ihr imitiert das Brüllen eines Leoparden und schon nach kurzer Zeit taucht ein stark und flink aussehender Leopard aus dem Unterholz auf.~       // ~You mimic the roar of a leopard and after only a short while a strong and swift looking leopard emerges from the undergrowth...~
+@54 = ~Ihr imitiert das Bellen eines Hundes und schon nach kurzer Zeit taucht ein aufgeweckt aussehender Hund aus der Umgebung auf.~       // ~You mimic the barking of a dog and after only a short while a keen looking dog emerges from the surrounding area...~
+@55 = ~Ihr imitiert die Zischlaute einer Riesenspinne und schon nach kurzer Zeit taucht eine gefährlich aussehende Spinne aus der Umgebung auf.~       // ~You mimic the hissing sounds of a giant spider and after only a short while a dangerous looking spider emerges from the surrounding area...~
+@56 = ~Ihr imitiert die Laute eines jungen Lindwurms und schon nach kurzer Zeit könnt ihr das Flattern kleiner Flügel auf Euch zu kommen hören...~       // ~You mimic the sounds of a young wyvern and after only a short while you can hear the flapping noise of small wings coming towards you...~
+@57 = ~Ihr imitiert die Laute eines Murmeltiers und schon nach kurzer Zeit taucht ein aufgeweckt aussehendes Murmeltier aus dem Unterholz auf.~       // ~You mimic the comforting low barking sound of a groundhog and after only a short while a cute and swift looking groundhog emerges from the undergrowth...~
+@58 = ~Ihr imitiert das sanfte Schnüffeln eines Hasens und schon nach kurzer Zeit taucht ein flink aussehender Hase aus dem Unterholz auf.~       // ~You mimic the soft snuffling sound of a rabbit and after only a short while a cute and swift looking rabbit emerges from the undergrowth...~
+
+//TP2 Copy&Name
+@59 = ~Tiergefährten rufen~       // ~Call Animal Companion~
+@60 = ~%name%~
+@61 = ~Angriff~       // ~Attack~
+@62 = ~Defensives Heulen~       // ~Defensive Howl~
+@63 = ~Kniesehnenbeißen~       // ~Hamstring Biting~
+@64 = ~Kniesehnenbeißen: Ende~       // ~Hamstring Biting: Ended~
+@65 = ~verlangsamt~       // ~Slowed~
+@66 = ~Netz~       // ~Web~
+@67 = ~Wachsamkeit~       // ~Alertness~
+@68 = ~Zickzack~       // ~Zigzag~
+@69 = ~Tiergefährten finden~       // ~Find Animal Companion~
+@70 = ~%name%s Leiche~       // ~%name%'s corpse~
+@71 = ~Wachsamkeit: Ende~

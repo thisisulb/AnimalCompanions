@@ -1,0 +1,82 @@
+//UBRPET0.BAF
+@1 = ~Your animal companion is dead.~
+@2 = ~Your animal companion has returned!~
+
+//UBRPETD.BAF
+@3 = ~Your animal companion is still injured and needs healing!~
+
+//UBRPET.BAF
+@4 = ~Your animal companion has died!~
+@5 = ~Your animal companion has gained in power!~
+
+//UBRPET.D
+@6 = ~As you look in the eyes of your new animal companion, you see curiosity and sympathy but no fear.~
+@7 = ~It is time to give your new friend a name and you certainly don't have to think long before you come up with the right one ...~
+@8 = ~%name% is what you will be called from now on.~
+@9 = ~From now on you will be called %name%. Do you like that, my big friend?~
+@10 = ~From now on I'll call you %name%. Do you like that, my winged friend?~
+@11 = ~From now on I'll call you %name%. Do you like that, little friend?~
+@12 = ~As you approach your animal companion ...~
+@13 = ~%name%'s head rises in what you think to be a gesture of approval.~
+@14 = ~Fine. Now that this is settled, there is something else I wanted from you...~
+@15 = ~Now, listen %name%, there's something else I want...~
+@16 = ~Great, let's get going then.~
+@17 = ~Time to go then.~
+@18 = ~%name% tilts its head and waits for your instructions.~
+@19 = ~I want you to behave naturally. Do as you normally would do, whether we are in combat or not.~
+@20 = ~I want you to keep behaving naturally and do as you normally would do, whether we are in combat or not.~
+@21 = ~I want you to only do what I tell you to do, at least while we are not in combat. It is OK for you to behave naturally while we are in combat, though.~
+@22 = ~I want you to keep doing only what I tell you to do, at least while we are not in combat. It is still OK for you to behave naturally while we are in combat, though.~
+@23 = ~I want you to only do what I tell you, whether we are in combat or not. No matter what happens, you will only do as I tell you.~
+@24 = ~I want you to keep doing only what I tell you to do, whether we are in combat or not.~
+@25 = ~%name% looks at you with a confident expression and seems to be curious as to what you might want next from your loyal friend.~
+@26 = ~Come here %name%, I want to pet you a little.~
+@27 = ~Is everything alright with you, my big friend?~
+@28 = ~Is everything alright with you, my winged friend?~
+@29 = ~Is everything alright with you, little friend?~
+@30 = ~I would like to give you a few instructions about your behavior %name%.~
+@31 = ~Listen %name%, I want you to keep your distance from the group for a while. Just stay within hearing range and I will call you when I need you back here.~
+@32 = ~You pet your animal friend for a while, much to %name%'s enjoyment as it seems.~
+@33 = ~There is something else I wanted from you...~
+@34 = ~That was fun, let's get going then.~
+@35 = ~%name% looks at you with a sad expression for a moment but then turns around and quickly disappears out of your sight.~
+
+//UBRPETA.D
+@36 = ~You decide that it is time to search for a proper animal companion of your own.~
+@37 = ~As you are about to inspect the area for animal tracks ...~
+@38 = ~... you realize that you are lacking the experience to form a lasting bond with an animal and decide to try it again once you have more experience.~
+@39 = ~... you realize that there are no suitable animals in this area and decide to wait for a better opportunity.~
+@40 = ~... you discover the tracks of a brown bear and decide that this is exactly the kind of animal you are looking for.~
+@41 = ~... you discover the tracks of a wolf and decide that this is exactly the kind of animal you are looking for.~
+@42 = ~... you discover the tracks of a panther and decide that this is exactly the kind of animal you are looking for.~
+@43 = ~... you discover the tracks of a leopard and decide that this is exactly the kind of animal you are looking for.~
+@44 = ~... you discover the tracks of a dog and decide that this is exactly the kind of animal you are looking for.~
+@45 = ~... you discover the tracks of a giant spider and decide that this is exactly the kind of animal you are looking for.~
+@46 = ~... you discover the tracks of a young wyvern and decide that this is exactly the kind of animal you are looking for.~
+@47 = ~... you discover the tracks of a groundhog and decide that this is exactly the kind of animal you are looking for.~
+@48 = ~... you discover the tracks of a rabbit and decide that this is exactly the kind of animal you are looking for.~
+@49 = ~... you decide to not look for an animal companion right now.~
+@50 = ~You mimic the roar of a brown bear and after only a short while a strong and fierce looking bear emerges from the undergrowth...~
+@51 = ~You mimic the howling of a wolf and after only a short while a strong and swift looking wolf emerges from the undergrowth...~
+@52 = ~You mimic the roar of a panther and after only a short while a strong and swift looking panther emerges from the undergrowth...~
+@53 = ~You mimic the roar of a leopard and after only a short while a strong and swift looking leopard emerges from the undergrowth...~
+@54 = ~You mimic the barking of a dog and after only a short while a keen looking dog emerges from the surrounding area...~
+@55 = ~You mimic the hissing sounds of a giant spider and after only a short while a dangerous looking spider emerges from the surrounding area...~
+@56 = ~You mimic the sounds of a young wyvern and after only a short while you can hear the flapping noise of small wings coming towards you...~
+@57 = ~You mimic the comforting low barking sound of a groundhog and after only a short while a cute and swift looking groundhog emerges from the undergrowth...~
+@58 = ~You mimic the soft snuffling sound of a rabbit and after only a short while a cute and swift looking rabbit emerges from the undergrowth...~
+
+//TP2 Copy&Name
+@59 = ~Call Animal Companion~
+@60 = ~%name%~
+@61 = ~Attack~
+@62 = ~Defensive Howl~
+@63 = ~Hamstring Biting~
+@64 = ~Hamstring Biting: Ended~
+@65 = ~Slowed~
+@66 = ~Web~
+@67 = ~Alertness~
+@68 = ~Zigzag~
+@69 = ~Find Animal Companion~
+@70 = ~%name%'s corpse~
+@71 = ~Alertness: Ended~

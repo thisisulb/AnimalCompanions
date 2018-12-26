@@ -1,0 +1,134 @@
+////////////////////////
+// Files (Copy & Name) ///
+////////////////////////
+
+UBRPET0.SPL - Call Animal Companion Spell
+UBRPET1.CRE - Brown Bear
+UBRPET1.ITM - Brown Bear Attack Item
+UBRPET2.CRE - Wolf
+UBRPET2.ITM - Wolf Attack Item 
+UBRPET2.SPL - Defensive Howle Spell 
+UBRPET3.CRE - Panther 
+UBRPET3.ITM - Panther Attack Item 
+UBRPET4.CRE - Leopard 
+UBRPET4.ITM - Leopard Attack Item 
+UBRPET5.CRE - Dog 
+UBRPET5.ITM - Dog Attack Item
+UBRPET5.SPL - Hamstring Biting Spell
+UBRPET5A.EFF - Hamstring Biting Spell
+UBRPET6.CRE - Spider 
+UBRPET6.ITM - Spider Attack Item
+UBRPET6.SPL - Web Spell 
+UBRPET7.CRE - Wyvern 
+UBRPET7.ITM - Wyvern Attack Item 
+UBRPET8.CRE - Groundhog 
+UBRPET8.ITM - Groundhog Attack Item 
+UBRPET8.SPL - Alertness Spell
+UBRPET9.CRE - Rabbit 
+UBRPET9.ITM - Rabbit Attack 
+UBRPET9.SPL - Zigzag Spell (Confusion)  
+UBRPETA.SPL - Find Animal Coompanion Spell 
+UBRPETD.CRE - 'Fake Death Creature'  
+    
+
+///////////////////////
+// Files2 (Batch Copy) ///
+///////////////////////
+
+AGRO.2DA - Sound File For Groundhog Animation 
+MDOG_WI.BMP - Color Palette Fix For The Wild Dog Animation 
+UBRPET0.CRE - Invisible Creature     
+UBRPET0.EFF - Summon Invis Creature Effect 
+UBRPET0.BAM - Call Animal Companion Spell  .BAM 
+UBRPET1.BMP - Small Creature Portrait
+UBRPET1D.ITM - Disguise as 'UBRPET1.CRE' Item 
+UBRPET1D.VVC - Disguise as 'UBRPET1.CRE' VVC 
+UBRPET1D.BAM - Disguise as 'UBRPET1.CRE' BAM 
+UBRPET1S.ITM -Stats Adjustment Item 
+UBRPET2.BAM - Defensive Howle. BAM 
+UBRPET2.BMP - Small Creature Portrait
+UBRPET2D.ITM - Disguise as 'UBRPET2.CRE' Item 
+UBRPET2D.VVC - Disguise as 'UBRPET2.CRE' VVC 
+UBRPET2D.BAM - Disguise as 'UBRPET2.CRE' BAM 
+UBRPET2S.ITM -Stats Adjustment Item 
+UBRPET3.BMP - Small Creature Portrait
+UBRPET3D.ITM - Disguise as 'UBRPET3.CRE' Item 
+UBRPET3D.VVC - Disguise as 'UBRPET3.CRE' VVC 
+UBRPET3D.BAM - Disguise as 'UBRPET3.CRE' BAM 
+UBRPET3S.ITM -Stats Adjustment Item 
+UBRPET4.BMP - Small Creature Portrait
+UBRPET4D.ITM - Disguise as 'UBRPET4.CRE' Item 
+UBRPET4D.VVC - Disguise as 'UBRPET4.CRE' VVC 
+UBRPET4D.BAM - Disguise as 'UBRPET4.CRE' BAM 
+UBRPET4S.ITM -Stats Adjustment Item 
+UBRPET5.BAM - Hamstring Biting .BAM 
+UBRPET5.BMP - Small Creature Portrait
+UBRPET5D.ITM - Disguise as 'UBRPET5.CRE' Item 
+UBRPET5D.VVC - Disguise as 'UBRPET5.CRE' VVC 
+UBRPET5D.BAM - Disguise as 'UBRPET5.CRE' BAM 
+UBRPET5S.ITM -Stats Adjustment Item 
+UBRPET5.EFF - Hamstring Biting Spell - Slow Target 
+UBRPET6.BMP - Small Creature Portrait
+UBRPET6D.ITM - Disguise as 'UBRPET6.CRE' Item 
+UBRPET6D.VVC - Disguise as 'UBRPET6.CRE' VVC 
+UBRPET6D.BAM - Disguise as 'UBRPET6.CRE' BAM 
+UBRPET6S.ITM -Stats Adjustment Item 
+UBRPET7.BMP - Small Creature Portrait
+UBRPET7D.ITM - Disguise as 'UBRPET7.CRE' Item 
+UBRPET7D.VVC - Disguise as 'UBRPET7.CRE' VVC 
+UBRPET7D.BAM - Disguise as 'UBRPET7.CRE' BAM 
+UBRPET7S.ITM -Stats Adjustment Item 
+UBRPET8.BAM - Alertness Spell .BAM 
+UBRPET8.BMP - Small Creature Portrait
+UBRPET8D.ITM - Disguise as 'UBRPET8.CRE' Item 
+UBRPET8D.VVC - Disguise as 'UBRPET8.CRE' VVC 
+UBRPET8D.BAM - Disguise as 'UBRPET8.CRE' BAM 
+UBRPET8S.ITM -Stats Adjustment Item 
+UBRPET9.BAM - Zigzag Spell .BAM
+UBRPET9.BMP - Small Creature Portrait
+UBRPET9D.ITM - Disguise as 'UBRPET9.CRE' Item 
+UBRPET9D.VVC - Disguise as 'UBRPET9.CRE' VVC 
+UBRPET9D.BAM - Disguise as 'UBRPET9.CRE' BAM 
+UBRPET9S.ITM -Stats Adjustment Item 
+UBRPETA.BAM - Find Animal Coompanion Spell  .BAM 
+UBRPETA.CRE -  Find Animal Coompanion Creature 
+UBRPETA.EFF - Find Animal Coompanion Creature Effect
+UBRPETD.SPL - Set HP to 5 Spell 
+UBRPETD.ITM - 'Fake Death Creature' Base Item.
+UBRPETDD.SPL - Set HP to 100% Spell & Spawn 'Fake Death Creature' 
+UBRPETDD.EFF - Summon 'Fake Death Creature' Effect 
+UBRPETG.SPL - Give 'Find Animal Coompanion Spell' Spell 
+UBRPETP.SPL - '-150k XP' Spell 
+UBRPETS.SPL - 'Spawn Animal Coompanion' Spell 
+UBRPETU.SPL - 'Pet Level Up Stat Booster' Spell 
+UBRPETX.SPL - 'Set XP To 90% Of Old Value' Spell 
+UBRPETZ.SPL - Give 'UBRPETA.SPL' Spell
+w_pwhist.WAV - Whistle sound for Call Animal Companion Spell 
+
+
+/////////////////////
+// Files3 (Compile) ///
+////////////////////
+
+UBRPET.D - Animal Companion Dialogue 
+UBRPET.BAF - Basic Animal Companion Script 
+UBRPET0.BAF - Invisible Creature Script  
+UBRPETA.BAF - 'Find Animal Companion' Creature Script 
+UBRPETA.D - 'Find Animal Companion' Spell Dialogue      
+UBRPETD.BAF - 'Fake Death Creature' Script 
+UBRPETS0.BAF - 'Start Area' Script for Rangers ONLY
+UBRPETS1.BAF - 'Start Area' Script for Rangers AND Druids
+
+///////////////////////////////////////////////////////////////////////
+////////////////////// Variables Used ///////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+//UBRPETLVL: Level Up Counter [0/1/2/3/4/5/6/7/8]
+//UBRPET1, [...], UBRPET9: What Kind Of Pet Has Been Chosen [0/1]
+//UBRPETDEAD: Pet 'Fake Dead' [0/1]
+//UBRPETAI: Payer AI Choice [0/1/2] 0='AI On' / 1='Only Combat AI' / 2='NO AI'
+//UBRPETHIDE (LOCALS): Time For Stealth Action [0-30]
+//UBRPETSPAWN: Whether Ranger Pet Has Been Spawned [0/1]
+//UBRPETSETUP (LOCALS): Whether 'Fake Death Creature' Is Disguised  [0/1]
+//UBRPETSTART: Has 'Find Animal Companion' Ability been given? [0/1]
+///////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////

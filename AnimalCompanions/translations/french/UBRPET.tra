@@ -1,0 +1,82 @@
+//UBRPET0.BAF
+@1 = ~Votre compagnon animal est mort.~
+@2 = ~Votre compagnon animal est revenu !~
+
+//UBRPETD.BAF
+@3 = ~Votre compagnon animal est toujours blessé et a besoin de soins !~
+
+//UBRPET.BAF
+@4 = ~Votre compagnon animal est mort !~
+@5 = ~Votre compagnon animal a gagné en puissance !~
+
+//UBRPET.D
+@6 = ~En regardant votre nouveau compagnon animal dans les yeux, vous y découvrez de la curiosité et de la sympathie, mais aucune crainte.~
+@7 = ~Il est temps de donner un nom à votre nouvel ami et vous n'attendez pas longtemps avant de trouver le bon...~
+@8 = ~A partir de maintenant, je t'appellerai %name%.~
+@9 = ~A partir de maintenant, je t'appellerai %name%. Est-ce que ça te plaît, mon grand ami ?~
+@10 = ~A partir de maintenant, je t'appellerai %name%. Est-ce que ça te plaît, mon ami ailé ?~
+@11 = ~A partir de maintenant, je t'appellerai %name%. Est-ce que ça te plaît, mon petit ami ?~
+@12 = ~Comme vous approchez de votre compagnon animal...~
+@13 = ~La tête de %name%'s se soulève dans un mouvement que vous prenez pour un geste d'approbation.~
+@14 = ~Bien. Puisque c'est réglé, il y a autre chose que j'attends de toi...~
+@15 = ~Maintenant, écoute-moi, %name%, il y a autre chose que je veux...~
+@16 = ~Parfait, allons-y alors.~
+@17 = ~Alors il est temps de se mettre en route.~
+@18 = ~%name% incline la tête et attend vos instructions.~
+@19 = ~Je veux que tu te comportes naturellement, que nous combattions ou non.~
+@20 = ~Je veux que tu continues de te comporter naturellement, que nous combattions ou non.~
+@21 = ~Je veux que tu ne fasses que ce que je te dis de faire, du moins tant que nous ne combattons pas. Cependant, tu peux combattre comme tu le sens, bien évidemment.~
+@22 = ~Je veux que tu continues de ne faire que ce que je te dis de faire, du moins tant que nous ne combattons pas. Cependant, tu peux toujours combattre comme tu le sens, bien évidemment.~
+@23 = ~Je veux que tu ne fasses que ce que je te dis de faire, que nous combattions ou pas. Peu importe ce qui se passe, tu ne fais que ce que je te dis de faire.~
+@24 = ~Je veux que tu continues de ne faire que ce que je te dis de faire, que nous combattions ou pas.~
+@25 = ~%name% vous regarde avec confiance et semble curieux de savoir ce que vous attendez de votre fidèle ami.~
+@26 = ~Viens ici, %name%, j'ai envie de te caresser un peu.~
+@27 = ~Est-ce que tout va bien, mon grand ami ?~
+@28 = ~Est-ce que tout va bien, mon ami ailé ?~
+@29 = ~Est-ce que tout va bien, petit ami ?~
+@30 = ~Je voudrais t'indiquer comment te comporter, %name%.~
+@31 = ~Ecoute, %name%. Je veux que tu gardes tes distances du groupe pendant un moment. Reste à portée de voix et je t'appellerai quand j'aurai besoin de toi.~
+@32 = ~Vous caressez %name% pendant quelque temps, à son plus grand plaisir, semble-t-il.~
+@33 = ~Il y a quelque chose d'autre que j'attends de toi...~
+@34 = ~C'était amusant, allons-y maintenant.~
+@35 = ~%name% vous regarde tristement pendant un moment, puis se retourne et disparaît rapidement de votre vue.~
+
+//UBRPETA.D
+@36 = ~Vous estimez qu'il est temps pour vous de partir à la recherche de votre compagnon animal.~
+@37 = ~Alors que vous êtes sur le point de chercher des pistes d'animaux dans les alentours...~
+@38 = ~... vous vous rendez compte que vous ne disposez pas de l'expérience et des compétences nécessaires pour tisser un lien durable avec un animal. Vous décidez donc de remettre à plus tard votre recherche, lorsque vous serez plus expérimenté.~ ~... vous vous rendez compte que vous ne disposez pas de l'expérience et des compétences nécessaires pour tisser un lien durable avec un animal. Vous décidez donc de remettre à plus tard votre recherche, lorsque vous serez plus expérimentée.~
+@39 = ~... vous vous rendez compte qu'il n'y a pas d'animaux appropriés dans cette zone et décidez d'attendre une meilleure occasion.~
+@40 = ~... vous découvrez la piste d'un ours brun et décidez que c'est exactement le type d'animal que vous recherchez.~
+@41 = ~... vous découvrez la piste d'un loup et décidez que c'est exactement le type d'animal que vous recherchez~
+@42 = ~... vous découvrez la piste d'une panthère et décidez que c'est exactement le type d'animal que vous recherchez~
+@43 = ~... vous découvrez la piste d'un léopard et décidez que c'est exactement le type d'animal que vous recherchez~
+@44 = ~... vous découvrez la piste d'un chien et décidez que c'est exactement le type d'animal que vous recherchez~
+@45 = ~... vous découvrez les traces du passage d'une araignée géante et décidez que c'est exactement le type d'animal que vous recherchez~
+@46 = ~... vous découvrez les traces de la présence d'une jeune wyverne et décidez que c'est exactement le type d'animal que vous recherchez~
+@47 = ~... vous découvrez les traces de la présence d'une marmotte et décidez que c'est exactement le type d'animal que vous recherchez~
+@48 = ~... vous découvrez la piste d'un lapin et décidez que c'est exactement le type d'animal que vous recherchez~
+@49 = ~... vous renoncez finalement pour l'instant à rechercher un compagnon animal.~
+@50 = ~Vous imitez le rugissement d'un ours brun et peu après un ours puissant à l'allure féroce émerge des sous-bois...~
+@51 = ~Vous imitez le hurlement d'un loup et peu après un loup à l'allure puissante et véloce émerge des sous-bois...~
+@52 = ~Vous imitez le rugissement d'une panthère et peu après une panthère à l'allure puissante et véloce émerge des broussailles...~
+@53 = ~Vous imitez le rugissement d'un léopard et peu après un léopard à l'allure puissante et véloce émerge des broussailles...~
+@54 = ~Vous imitez l'aboiement d'un chien et peu après un chien vif répond à votre appel...~
+@55 = ~Vous imitez les sifflements et les chuintements d'une araignée géante et peu après une araignée menaçante répond à votre appel...~
+@56 = ~Vous imitez le son d'une jeune wyverne et peu après vous entendez s'approcher les battements de petites ailes...~
+@57 = ~Vous imitez l'aboiement grave et réconfortant d'une marmotte et peu après une adorable et rapide marmotte émerge des sous-bois...~
+@58 = ~Vous imitez les reniflements doux d'un lapin et peu après un mignon petit lapin émerge des sous-bois en courant...~
+
+//TP2 Copy&Name
+@59 = ~Appel du compagnon animal~
+@60 = ~%name%~
+@61 = ~Attaque~
+@62 = ~Hurlement Défensif~
+@63 = ~Morsure paralysante~
+@64 = ~Fin de Morsure paralysante~
+@65 = ~Ralenti~
+@66 = ~Toile d'araignée~
+@67 = ~Vigilance~
+@68 = ~Zigzag~
+@69 = ~Trouver un compagnon animal~
+@70 = ~Corps de %name%~
+@71 = ~Fin de Vigilance~

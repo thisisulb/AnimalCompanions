@@ -1,0 +1,259 @@
+BACKUP ~AnimalCompanions/backup~ // So WeiDU Can Uninstall.
+AUTHOR ~Ulb, Mod Forum: http://www.shsforums.net/topic/56242-animal-companions~// Contact Address Displayed If Installation Fails.
+README ~AnimalCompanions/AnimalCompanions.pdf~ // Shows Readme File.
+
+ALWAYS
+  // Borrowed from Edwin Romance: convert strings to UTF-8 for BGEE/BG2EE
+  INCLUDE ~%MOD_FOLDER%/lib/handle_charsets.tpa~
+
+  // No exception, everything needs to be converted
+  ACTION_DEFINE_ARRAY UBPnoconvert BEGIN END
+
+  // UBRPET.tra needs to be reloaded?
+  ACTION_DEFINE_ARRAY UBPreload BEGIN UBRPET END
+
+  // There is no "language" folder so the root of all languages is %MOD_FOLDER%
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charset = 1
+    STR_VAR
+      tra_path = EVAL ~%MOD_FOLDER%/translations~
+	  noconvert_array = UBPnoconvert
+      reload_array = UBPreload
+  END
+END
+
+LANGUAGE ~English~ ~english~ ~AnimalCompanions/translations/english/UBRPET.tra~
+LANGUAGE ~Deutsch~ ~german~ ~AnimalCompanions/translations/german/UBRPET.tra~
+LANGUAGE ~Francais] [translation by Gwendolyne~ ~french~ ~AnimalCompanions/translations/french/UBRPET.tra~
+LANGUAGE ~Polski] [translation by Cahir~ ~polish~ ~AnimalCompanions/translations/polish/UBRPET.tra~
+LANGUAGE ~Italiano] [translation by Alessandro Nosenzo, proofreading by Aedan~ ~italian~ ~AnimalCompanions/translations/italian/UBRPET.tra~
+
+BEGIN ~Animal Companions For All Rangers (Optional: Druids)~ // Name Of This Component.
+
+// Ask Whether To Include Druids Or Not.
+PRINT ~ALLOW DRUIDS TO GET ANIMAL COMPANIONS TOO?~
+PRINT ~PLEASE CHOOSE ONE OPTION:
+
+[0] NO, don't allow druids to get animal companions.
+[1] YES, allow druids to get animal companions too.~
+  ACTION_READLN druid
+        OUTER_WHILE (~%druid%~ STRING_COMPARE 1) && (~%druid%~ STRING_COMPARE 0) BEGIN
+        PRINT ~PLEASE CHOOSE ONE OPTION:
+
+[0] NO, don't allow druids to get animal companions.
+[1] YES, allow druids to get animal companions too.~
+ACTION_READLN druid
+END
+
+// Ask For The Animal Companion's Future Name:
+PRINT ~PLEASE ENTER A NAME FOR YOUR ANIMAL COMPANION:~
+ACTION_READLN name
+PRINT ~*************************************************************~
+PRINT ~YOU ENTERED:       <<< "%name%" >>>~
+PRINT ~*************************************************************~
+PRINT ~IS "%name%" CORRECT?
+
+PRESS [1] to proceed the installation with %name%.
+PRESS any other button to enter a new name.~
+
+ ACTION_READLN selection
+    OUTER_WHILE (~%selection%~ STRING_COMPARE 1) BEGIN
+    PRINT ~PLEASE ENTER A NAME FOR YOUR ANIMAL COMPANION:~
+
+ACTION_READLN name
+PRINT ~*************************************************************~
+PRINT ~YOU ENTERED:       <<< "%name%" >>>~
+PRINT ~*************************************************************~
+PRINT ~IS "%name%" CORRECT?
+
+PRESS [1] to proceed the installation with %name%.
+PRESS any other button to enter a new name.~
+ACTION_READLN selection
+END
+
+// Compile Scripts And Dialogues.
+COMPILE ~AnimalCompanions/files3/UBRPET0.baf~
+COMPILE ~AnimalCompanions/files3/UBRPETD.baf~
+COMPILE ~AnimalCompanions/files3/UBRPET.baf~
+COMPILE ~AnimalCompanions/files3/UBRPETA.baf~
+COMPILE ~AnimalCompanions/files3/UBRPETA.d~
+COMPILE ~AnimalCompanions/files3/UBRPET.d~
+
+// Add Starting Area Script.
+CLEAR_IDS_MAP                                               // Reload .IDS Files
+ACTION_IF (GAME_IS ~bg2ee tob eet bgt~) THEN BEGIN     // Check for BG2 Start
+EXTEND_TOP ~AR0602.BCS~   ~AnimalCompanions/files3/UBRPETS%druid%.baf~    // BG2 Start.
+END
+
+ACTION_IF (GAME_IS ~bgt~) THEN BEGIN     // Check for BGT.
+   EXTEND_TOP ~AR0015.BCS~   ~AnimalCompanions/files3/UBRPETS%druid%.baf~ // BGT Start
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~FW2600.are~) THEN BEGIN     // Check for TuTu
+   EXTEND_TOP ~FW2600.BCS~   ~AnimalCompanions/files3/UBRPETS%druid%.baf~ // TuTu Start
+END
+
+ACTION_IF (GAME_IS ~bg2ee tob eet bgt~) THEN BEGIN      // Check for TOB
+   EXTEND_TOP ~AR4000.BCS~   ~AnimalCompanions/files3/UBRPETS%druid%.baf~ // TOB Start
+END
+
+ACTION_IF (GAME_IS ~bgee~) THEN BEGIN  					    // Check for BG1 Start (Bg1EE)
+   EXTEND_TOP ~AR2600.BCS~  ~AnimalCompanions/files3/UBRPETS%druid%.baf~  // BG1EE Start
+END
+
+ACTION_IF (GAME_IS ~eet~) THEN BEGIN 						// Check for BG1 Start (EET)
+   EXTEND_TOP ~BG2600.BCS~   ~AnimalCompanions/files3/UBRPETS%druid%.baf~ // EET Start
+END
+
+ACTION_IF (FILE_EXISTS_IN_GAME ~BD0120.are~) THEN BEGIN 						// Check for SoD Start
+EXTEND_TOP ~BD0120.BCS~   ~AnimalCompanions/files3/UBRPETS%druid%.baf~ // SoD Start
+END
+
+ACTION_IF (GAME_IS ~iwdee~) THEN BEGIN  					    // Check for IWD1EE Start (IWD1EE )
+   EXTEND_TOP ~AR1006.BCS~  ~AnimalCompanions/files3/UBRPETS%druid%.baf~  // IWD1EE  Start
+   EXTEND_TOP ~AR9100.BCS~  ~AnimalCompanions/files3/UBRPETS%druid%.baf~  // HoW  Start
+END
+
+// Copy Files Over And Name Them.
+  COPY ~AnimalCompanions/files/UBRPET0.SPL~ ~override~
+  SAY NAME1 @59 // Unidentified Name For Items OR Spell Name.
+  
+  COPY ~AnimalCompanions/files/UBRPET1.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET2.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET3.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET4.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET5.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET6.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET7.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET8.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET9.CRE~ ~override~
+  SAY NAME1 @60 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @60 // Identified Name For Items; Not Used For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET1.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET2.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET3.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET4.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET5.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET6.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET7.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET8.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET9.ITM~ ~override~
+  SAY NAME1 @61 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @61 // Identified Name For Items; Not Used For Spells.
+
+  COPY ~AnimalCompanions/files/UBRPET2.SPL~ ~override~
+  SAY NAME1 @62 // Unidentified Name For Items OR Spell Name.
+  SAY UNIDENTIFIED_DESC @62 // Unidentified Description For Items, Spell Description For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET5.SPL~ ~override~
+  SAY NAME1 @63 // Unidentified Name For Items OR Spell Name.
+  SAY UNIDENTIFIED_DESC @63 // Unidentified Description For Items, Spell Description For Spells.
+  SAY 0xfe @64 // Display String.
+  
+  COPY ~AnimalCompanions/files/UBRPET5A.EFF~ ~override~
+  SAY 0x1c @65 // Display String.
+  
+  COPY ~AnimalCompanions/files/UBRPET6.SPL~ ~override~
+  SAY NAME1 @66 // Unidentified Name For Items OR Spell Name.
+  SAY UNIDENTIFIED_DESC @66 // Unidentified Description For Items, Spell Description For Spells.
+  
+  COPY ~AnimalCompanions/files/UBRPET8.SPL~ ~override~
+  SAY NAME1 @67 // Unidentified Name For Items OR Spell Name.
+  SAY UNIDENTIFIED_DESC @67 // Unidentified Description For Items, Spell Description For Spells.
+  SAY 0x2ae @71 // Display String.
+  
+  COPY ~AnimalCompanions/files/UBRPET9.SPL~ ~override~
+  SAY NAME1 @68 // Unidentified Name For Items OR Spell Name.
+  SAY UNIDENTIFIED_DESC @68 // Unidentified Description For Items, Spell Description For Spells.  
+  
+  COPY ~AnimalCompanions/files/UBRPETA.SPL~ ~override~
+  SAY NAME1 @69 // Unidentified Name For Items OR Spell Name.
+  SAY UNIDENTIFIED_DESC @69 // Unidentified Description For Items, Spell Description For Spells.  
+  
+  COPY ~AnimalCompanions/files/UBRPETD.CRE~ ~override~
+  SAY NAME1 @70 // Unidentified Name For Items OR Spell Name.
+  SAY NAME2 @70 // Identified Name For Items; Not Used For Spells.
+ 
+// Batch-Copy Files Over.
+  COPY ~AnimalCompanions/files2~ ~override~ 
+
+// Patch Rod Of Resurrection
+ACTION_IF (FILE_EXISTS_IN_GAME ~RODS03.ITM~) THEN BEGIN 
+  COPY_EXISTING ~RODS03.ITM~ ~override~
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+        header = 1            // (Optional) Add It Only To The First Item Ability (If Multiple Abilities Have Been Defined) 
+        opcode = 146          // Cast Spell (At Target)
+        target = 2            // Present Target
+        timing = 1            // Permanent
+        parameter2 = 1        // Cast Instantly
+        resist_dispel = 0     // No dispel/Bypass resistance
+        STR_VAR
+        resource = SPPR712    // Name Of The Spell Resource
+		END
+		END
+// Patch BHAAL Resurrection
+ACTION_IF (FILE_EXISTS_IN_GAME ~BHAAL4A.SPL~) THEN BEGIN 
+  COPY_EXISTING ~BHAAL4A.SPL~ ~override~
+    LPF ADD_SPELL_EFFECT
+        INT_VAR
+        header = 1            // (Optional) Add It Only To The First Item Ability (If Multiple Abilities Have Been Defined) 
+        opcode = 146          // Cast Spell (At Target)
+        target = 2            // Present Target
+        timing = 1            // Permanent
+        parameter2 = 1        // Cast Instantly
+        resist_dispel = 0     // No dispel/Bypass resistance
+        STR_VAR
+        resource = SPPR712    // Name Of The Spell Resource
+		END
+END

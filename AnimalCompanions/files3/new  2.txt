@@ -1,0 +1,652 @@
+IF
+	HPLT(Myself,2)
+	Global("UB_SHDEAD","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("UB_SHDEAD","GLOBAL",1)
+		ReallyForceSpellRES("UB_SH0D",Myself)  // <NO TEXT>
+		SmallWait(5)
+		DestroySelf()
+END
+
+IF
+	!InActiveArea(Player1)
+THEN
+	RESPONSE #100
+		MoveGlobalObject("UB_SH0",Player1)  // Hound Spirit
+		MoveToOffset([2.3])
+END
+
+IF
+	InActiveArea(Player1)
+	!Range(Player1,25)
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+		Wait(1)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",2)
+	OR(2)
+		Level(Player1,2)
+		LevelGT(Player1,2)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",2)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",3)
+	OR(2)
+		Level(Player1,3)
+		LevelGT(Player1,3)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",3)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",4)
+	OR(2)
+		Level(Player1,4)
+		LevelGT(Player1,4)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",4)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",5)
+	OR(2)
+		Level(Player1,5)
+		LevelGT(Player1,5)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",5)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",6)
+	OR(2)
+		Level(Player1,6)
+		LevelGT(Player1,6)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",6)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",7)
+	OR(2)
+		Level(Player1,7)
+		LevelGT(Player1,7)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",7)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",8)
+	OR(2)
+		Level(Player1,8)
+		LevelGT(Player1,8)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",8)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",9)
+	OR(2)
+		Level(Player1,9)
+		LevelGT(Player1,9)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",9)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",10)
+	OR(2)
+		Level(Player1,10)
+		LevelGT(Player1,10)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",10)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",11)
+	OR(2)
+		Level(Player1,11)
+		LevelGT(Player1,11)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",11)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",12)
+	OR(2)
+		Level(Player1,12)
+		LevelGT(Player1,12)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",12)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",13)
+	OR(2)
+		Level(Player1,13)
+		LevelGT(Player1,13)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",13)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",14)
+	OR(2)
+		Level(Player1,14)
+		LevelGT(Player1,14)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",14)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",15)
+	OR(2)
+		Level(Player1,15)
+		LevelGT(Player1,15)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",15)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",16)
+	OR(2)
+		Level(Player1,16)
+		LevelGT(Player1,16)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",16)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",17)
+	OR(2)
+		Level(Player1,17)
+		LevelGT(Player1,17)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",17)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",18)
+	OR(2)
+		Level(Player1,18)
+		LevelGT(Player1,18)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",18)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",19)
+	OR(2)
+		Level(Player1,19)
+		LevelGT(Player1,19)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",19)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",20)
+	OR(2)
+		Level(Player1,20)
+		LevelGT(Player1,20)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",20)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",21)
+	OR(2)
+		Level(Player1,21)
+		LevelGT(Player1,21)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",21)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",22)
+	OR(2)
+		Level(Player1,22)
+		LevelGT(Player1,22)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",22)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",23)
+	OR(2)
+		Level(Player1,23)
+		LevelGT(Player1,23)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",23)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",24)
+	OR(2)
+		Level(Player1,24)
+		LevelGT(Player1,24)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",24)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",25)
+	OR(2)
+		Level(Player1,25)
+		LevelGT(Player1,25)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",25)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",26)
+	OR(2)
+		Level(Player1,26)
+		LevelGT(Player1,26)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",26)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",27)
+	OR(2)
+		Level(Player1,27)
+		LevelGT(Player1,27)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",27)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",28)
+	OR(2)
+		Level(Player1,28)
+		LevelGT(Player1,28)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",28)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",29)
+	OR(2)
+		Level(Player1,29)
+		LevelGT(Player1,29)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",29)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",30)
+	OR(2)
+		Level(Player1,30)
+		LevelGT(Player1,30)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",30)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",31)
+	OR(2)
+		Level(Player1,31)
+		LevelGT(Player1,31)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",31)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",32)
+	OR(2)
+		Level(Player1,32)
+		LevelGT(Player1,32)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",32)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",33)
+	OR(2)
+		Level(Player1,33)
+		LevelGT(Player1,33)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",33)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",34)
+	OR(2)
+		Level(Player1,34)
+		LevelGT(Player1,34)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",34)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",35)
+	OR(2)
+		Level(Player1,35)
+		LevelGT(Player1,35)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",35)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",36)
+	OR(2)
+		Level(Player1,36)
+		LevelGT(Player1,36)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",36)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",37)
+	OR(2)
+		Level(Player1,37)
+		LevelGT(Player1,37)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",37)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",38)
+	OR(2)
+		Level(Player1,38)
+		LevelGT(Player1,38)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",38)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",39)
+	OR(2)
+		Level(Player1,39)
+		LevelGT(Player1,39)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",39)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END
+
+IF
+	GlobalLT("UB_SHLV","GLOBAL",40)
+	OR(2)
+		Level(Player1,40)
+		LevelGT(Player1,40)
+THEN
+	RESPONSE #100
+		SetInterrupt(FALSE)
+		ReallyForceSpellRES("UB_SH0C",Myself)  // No such index
+		SetGlobal("UB_SHLV","GLOBAL",40)
+		DisplayString(Myself,17119)  // No, I'm sorry, none of them sound familiar.
+		PlaySound("GAM_11")
+		SmallWait(10)
+		SetInterrupt(TRUE)
+END

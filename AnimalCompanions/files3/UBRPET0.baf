@@ -1,0 +1,484 @@
+/////////////////////////////////////////////////////////////////////////////////
+//Variables Used In This Script:
+//
+//UBRPETSPAWN: Whether Ranger Pet Has Been Spawned [0/1]
+//
+//UBRPET1, ...,UBRPET9: What Kind Of Pet Has Been Chosen [0/1]
+//
+//UBRPETDEAD: Pet 'Fake Dead' [0/1]
+//
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////
+//Return Ranger Pet From 'SEND AWAY' - Block ////
+/////////////////////////////////////////////////
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET1","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET1")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET1",Player1)
+ActionOverride("UBRPET1",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET2","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET2")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET2",Player1)
+ActionOverride("UBRPET2",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET3","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET3")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET3",Player1)
+ActionOverride("UBRPET3",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET4","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET4")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET4",Player1)
+ActionOverride("UBRPET4",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET5","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET5")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET5",Player1)
+ActionOverride("UBRPET5",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET6","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET6")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET6",Player1)
+ActionOverride("UBRPET6",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET7","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET7")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET7",Player1)
+ActionOverride("UBRPET7",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET8","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET8")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET8",Player1)
+ActionOverride("UBRPET8",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET9","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+!InActiveArea("UBRPET9")
+THEN
+RESPONSE #100
+MoveGlobalObject("UBRPET9",Player1)
+ActionOverride("UBRPET9",MoveToOffset([2.3]))
+DisplayStringHead(Player1,@2) // Your animal companion has returned!
+DestroySelf()
+END
+
+
+
+/////////////////////////////////////////////////
+//Send 'In-Area Pet' Back To Player - Block ///////
+/////////////////////////////////////////////////
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET1","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET1")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET1",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET2","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET2")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET2",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET3","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET3")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET3",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET4","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET4")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET4",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET5","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET5")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET5",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET6","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET6")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET6",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET7","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET7")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET7",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET8","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET8")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET8",MoveToObject(Player1))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",1)
+Global("UBRPET9","GLOBAL",1)
+!Global("UBRPETDEAD","GLOBAL",1)
+InActiveArea("UBRPET9")
+THEN
+RESPONSE #100
+ActionOverride("UBRPET9",MoveToObject(Player1))
+DestroySelf()
+END
+
+
+
+/////////////////////////////////////////////////
+//Tell 'Pet Is Dead' To Player - Block ////////////
+/////////////////////////////////////////////////
+
+IF
+Global("UBRPETDEAD","GLOBAL",1)
+THEN
+RESPONSE #100
+DisplayStringHead(Player1,@1) // Your animal companion is dead.
+DestroySelf()
+END
+
+
+
+//////////////////////////////
+//Spawn Ranger Pet - Block ///
+//////////////////////////////
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET1","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET1", Player1, 0, 0, 0) 
+ActionOverride("UBRPET1", MakeGlobal()) 
+ActionOverride("UBRPET1", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET1", AddFamiliar())
+ActionOverride("UBRPET1",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET2","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET2", Player1, 0, 0, 0) 
+ActionOverride("UBRPET2", MakeGlobal()) 
+ActionOverride("UBRPET2", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET2", AddFamiliar())
+ActionOverride("UBRPET2",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET3","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET3", Player1, 0, 0, 0) 
+ActionOverride("UBRPET3", MakeGlobal()) 
+ActionOverride("UBRPET3", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET3", AddFamiliar())
+ActionOverride("UBRPET3",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET4","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET4", Player1, 0, 0, 0) 
+ActionOverride("UBRPET4", MakeGlobal()) 
+ActionOverride("UBRPET4", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET4", AddFamiliar())
+ActionOverride("UBRPET4",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET5","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET5", Player1, 0, 0, 0) 
+ActionOverride("UBRPET5", MakeGlobal()) 
+ActionOverride("UBRPET5", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET5", AddFamiliar())
+ActionOverride("UBRPET5",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET6","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET6", Player1, 0, 0, 0) 
+ActionOverride("UBRPET6", MakeGlobal()) 
+ActionOverride("UBRPET6", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET6", AddFamiliar())
+ActionOverride("UBRPET6",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET7","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET7", Player1, 0, 0, 0) 
+ActionOverride("UBRPET7", MakeGlobal()) 
+ActionOverride("UBRPET7", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET7", AddFamiliar())
+ActionOverride("UBRPET7",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET8","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET8", Player1, 0, 0, 0) 
+ActionOverride("UBRPET8", MakeGlobal()) 
+ActionOverride("UBRPET8", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET8", AddFamiliar())
+ActionOverride("UBRPET8",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+Global("UBRPET9","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+CreateCreatureObject("UBRPET9", Player1, 0, 0, 0) 
+ActionOverride("UBRPET9", MakeGlobal()) 
+ActionOverride("UBRPET9", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET9", AddFamiliar())
+ActionOverride("UBRPET9",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+
+// Choose Random Pet If No Preference Was Given
+
+IF
+Global("UBRPETSPAWN","GLOBAL",0)
+!Global("UBRPET1","GLOBAL",1)
+!Global("UBRPET2","GLOBAL",1)
+!Global("UBRPET3","GLOBAL",1)
+!Global("UBRPET4","GLOBAL",1)
+!Global("UBRPET5","GLOBAL",1)
+!Global("UBRPET6","GLOBAL",1)
+!Global("UBRPET7","GLOBAL",1)
+!Global("UBRPET8","GLOBAL",1)
+!Global("UBRPET9","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET1","GLOBAL",1)
+CreateCreatureObject("UBRPET1", Player1, 0, 0, 0) 
+ActionOverride("UBRPET1", MakeGlobal()) 
+ActionOverride("UBRPET1", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET1", AddFamiliar())
+ActionOverride("UBRPET1",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET2","GLOBAL",1)
+CreateCreatureObject("UBRPET2", Player1, 0, 0, 0) 
+ActionOverride("UBRPET2", MakeGlobal()) 
+ActionOverride("UBRPET2", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET2", AddFamiliar())
+ActionOverride("UBRPET2",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET3","GLOBAL",1)
+CreateCreatureObject("UBRPET3", Player1, 0, 0, 0) 
+ActionOverride("UBRPET3", MakeGlobal()) 
+ActionOverride("UBRPET3", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET3", AddFamiliar())
+ActionOverride("UBRPET3",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET4","GLOBAL",1)
+CreateCreatureObject("UBRPET4", Player1, 0, 0, 0) 
+ActionOverride("UBRPET4", MakeGlobal()) 
+ActionOverride("UBRPET4", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET4", AddFamiliar())
+ActionOverride("UBRPET4",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET5","GLOBAL",1)
+CreateCreatureObject("UBRPET5", Player1, 0, 0, 0) 
+ActionOverride("UBRPET5", MakeGlobal()) 
+ActionOverride("UBRPET5", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET5", AddFamiliar())
+ActionOverride("UBRPET5",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET6","GLOBAL",1)
+CreateCreatureObject("UBRPET6", Player1, 0, 0, 0) 
+ActionOverride("UBRPET6", MakeGlobal()) 
+ActionOverride("UBRPET6", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET6", AddFamiliar())
+ActionOverride("UBRPET6",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET7","GLOBAL",1)
+CreateCreatureObject("UBRPET7", Player1, 0, 0, 0) 
+ActionOverride("UBRPET7", MakeGlobal()) 
+ActionOverride("UBRPET7", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET7", AddFamiliar())
+ActionOverride("UBRPET7",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET8","GLOBAL",1)
+CreateCreatureObject("UBRPET8", Player1, 0, 0, 0) 
+ActionOverride("UBRPET8", MakeGlobal()) 
+ActionOverride("UBRPET8", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET8", AddFamiliar())
+ActionOverride("UBRPET8",MoveToOffset([2.3]))
+DestroySelf()
+RESPONSE #100
+SetGlobal("UBRPETSPAWN","GLOBAL",1)
+SetGlobal("UBRPET9","GLOBAL",1)
+CreateCreatureObject("UBRPET9", Player1, 0, 0, 0) 
+ActionOverride("UBRPET9", MakeGlobal()) 
+ActionOverride("UBRPET9", ChangeEnemyAlly(Myself, FAMILIAR)) 
+ActionOverride("UBRPET9", AddFamiliar())
+ActionOverride("UBRPET9",MoveToOffset([2.3]))
+DestroySelf()
+END
+
+

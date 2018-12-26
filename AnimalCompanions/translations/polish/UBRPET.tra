@@ -1,0 +1,82 @@
+//UBRPET0.BAF
+@1 = ~Twój zwierzêcy towarzysz nie ¿yje.~
+@2 = ~Twój zwierzêcy towarzysz powróci³!~
+
+//UBRPETD.BAF
+@3 = ~Twój zwierzêcy towarzysz jest nadal ranny i wymaga leczenia!~
+
+//UBRPET.BAF
+@4 = ~Twój zwierzêcy towarzysz zgin¹³!~
+@5 = ~Twój zwierzêcy towarzysz³ urós³ w si³ê!~
+
+//UBRPET.D
+@6 = ~Spogl¹daj¹c prosto w oczy swemu nowemu zwierzêcemu towarzyszowi, dostrzegasz w nich ciekawoœæ i sympatiê, za to ani odrobiny strachu.~
+@7 = ~Czas wybraæ twojemu towarzyszowi nowe imiê. Wygl¹da na to, ¿e nie potrzebujesz wiele czasu, by zdecydowaæ siê na w³aœciwe...~
+@8 = ~Od tej pory bêdê na ciebie mówi³ %name%.~ ~Od tej pory bêdê na ciebie mówi³a %name%.~
+@9 = ~Od tej pory bêdê na ciebie mówi³ %name%. Podoba ci siê, mój wielki przyjacielu?~ ~Od tej pory bêdê na ciebie mówi³a %name%. Podoba ci siê, mój wielki przyjacielu?~
+@10 = ~Od tej pory bêdê na ciebie mówi³ %name%. Podoba ci siê, skrzydlaty przyjacielu?~ ~Od tej pory bêdê na ciebie mówi³a %name%. Podoba ci siê, skrzydlaty przyjacielu?~
+@11 = ~Od tej pory bêdê na ciebie mówi³ %name%. Podoba ci siê, mój ma³y przyjacielu?~ ~Od tej pory bêdê na ciebie mówi³a %name%. Podoba ci siê, mój ma³y przyjacielu?~
+@12 = ~Gdy zbli¿asz siê do swego zwierzêcego towarzysza...~
+@13 = ~%name% podnosi ³eb w geœcie aprobaty.~
+@14 = ~Œwietnie. Skoro ju¿ to sobie wyjaœniliœmy, zrób dla mnie coœ jeszcze...~
+@15 = ~A teraz, %name%, zrób dla mnie coœ innego...~
+@16 = ~Œwietnie, ruszajmy wiêc.~
+@17 = ~A wiêc pora ruszaæ.~
+@18 = ~%name% przekrzywia g³owê w oczekiwaniu na dalsze polecenia.~
+@19 = ~Masz zachowywaæ siê naturalnie. Rób, to co normalnie robisz, bez wzglêdu na to, czy jesteœmy w trakcie walki, czy te¿ nie.~
+@20 = ~Masz zachowywaæ siê naturalnie i robiæ to, co normalnie robisz, bez wzglêdu na to, czy jesteœmy w trakcie walki, czy te¿ nie.~
+@21 = ~Masz robiæ tylko to, czego od ciebie wymagam, przynajmniej w trakcie walki. Mo¿esz zachowywaæ siê naturalnie, jeœli nie walczymy.~
+@22 = ~Masz ca³y czas robiæ tylko to, czego od ciebie wymagam, przynajmniej w trakcie walki. Dalej mo¿esz siê zachowywaæ naturalnie, jeœli nie walczymy.~
+@23 = ~Masz robiæ tylko to, co ci ka¿ê, bez wzglêdu na to, czy jesteœmy w trakcie walki, czy te¿ nie. Cokolwiek by siê nie dzia³o, masz robiæ to, co mówiê.~
+@24 = ~Masz nadal robiæ tylko to, co ci ka¿ê, bez wzglêdu na to, czy jesteœmy w trakcie walki, czy te¿ nie.~
+@25 = ~%name% spogl¹da na ciebie pewnym siebie wzrokiem, oczekuj¹c z zaciekawieniem kolejnych poleceñ.~
+@26 = ~Chod¿ tutaj, %name%, chcê siê z tob¹ pobawiæ.~
+@27 = ~Wszystko w porz¹dku, mój wielki przyjacielu?~
+@28 = ~Wszystko w porz¹dku, skrzydlaty przyjacielu?~
+@29 = ~Wszystko w porz¹dku, mój ma³y przyjacielu?~
+@30 = ~Chcê ci wydaæ kilka poleceñ dotycz¹cych twojego zachowania, %name%.~
+@31 = ~S³uchaj, %name%, oddal siê od dru¿yny na jakiœ czas. Trzymaj siê w zasiêgu s³uchu, wezwê ciê, gdy przyjdzie pora.~
+@32 = ~Bawisz siê przez d³u¿sz¹ chwilê ze swoim zwierzêcym przyjacielem. %name% szaleje z radoœci~
+@33 = ~Zrób dla mnie coœ innego...~
+@34 = ~Fajnie by³o, ale musimy ruszaæ.~
+@35 = ~%name% patrzy na ciebie przez chwilê smutnym wzrokiem, a po chwili odwraca siê i szybko znika ci z oczu.~
+
+//UBRPETA.D
+@36 = ~Uzna³eœ, ¿e przysz³a pora na poszukanie dla siebie zwierzêcego towarzysza.~ ~Uzna³aœ, ¿e przysz³a pora na poszukanie dla siebie zwierzêcego towarzysza.~
+@37 = ~W chwili, gdy zacz¹³eœ rozgl¹daæ siê za zwierzêcymi œladami...~ ~W chwili, gdy zaczê³aœ rozgl¹daæ siê za zwierzêcymi œladami...~
+@38 = ~... dotar³o do ciebie, ¿e brak ci doœwiadczenia, by nawi¹zaæ trwa³¹ wiêŸ ze zwierzêciem. Zdecydowa³eœ wiêc spróbowaæ póŸniej.~ ~... dotar³o do ciebie, ¿e brak ci doœwiadczenia, by nawi¹zaæ trwa³¹ wiêŸ ze zwierzêciem. Zdecydowa³aœ wiêc spróbowaæ póŸniej.~
+@39 = ~... dotar³o do ciebie, ¿e w okolicy nie ma odpowiednich zwierz¹t. Zdecydowa³eœ wiêc poczekaæ na lepsz¹ okazjê.~ ~... dotar³o do ciebie, ¿e w okolicy nie ma odpowiednich zwierz¹t. Zdecydowa³aœ wiêc poczekaæ na lepsz¹ okazjê.~
+@40 = ~... natrafi³eœ na trop niedŸwiedzia brunatnego i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop niedŸwiedzia brunatnego i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@41 = ~... natrafi³eœ na trop wilka i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop wilka i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@42 = ~... natrafi³eœ na trop pantery i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop pantery i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@43 = ~... natrafi³eœ na trop leoparda i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop leoparda i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@44 = ~... natrafi³eœ na trop psa i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop psa i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@45 = ~... natrafi³eœ na trop olbrzymiego paj¹ka i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop olbrzymiego paj¹ka i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@46 = ~... natrafi³eœ na trop m³odej wiwerny i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop m³odej wiwerny i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@47 = ~... natrafi³eœ na trop œwistaka i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop œwistaka i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@48 = ~... natrafi³eœ na trop królika i zdecydowa³eœ, ¿e w³aœnie takiego zwierzêcia szukasz.~ ~... natrafi³aœ na trop królika i zdecydowa³aœ, ¿e w³aœnie takiego zwierzêcia szukasz.~
+@49 = ~... postanowi³eœ, ¿e nie bêdziesz teraz szukaæ zwierzêcego towarzysza.~ ~... postanowi³aœ, ¿e nie bêdziesz teraz szukaæ zwierzêcego towarzysza.~
+@50 = ~Naœladujesz ryk niedŸwiedzia brunatnego i chwilê póŸniej z zaroœli wy³ania siê silny i groŸnie wygl¹daj¹cy niedŸwiedŸ...~
+@51 = ~Naœladujesz wycie wilka i chwilê póŸniej z zaroœli wy³ania siê silny i zwinny wilk...~
+@52 = ~Naœladujesz ryk pantery i chwilê póŸniej z zaroœli wy³ania siê silna i zwinna pantera...~
+@53 = ~Naœladujesz ryk leoparda i chwilê póŸniej z zaroœli wy³ania siê silny i zwinny leopard...~
+@54 = ~Naœladujesz szczekanie psa i chwilê póŸniej zjawia siê merdaj¹cy ogonem pies...~
+@55 = ~Naœladujesz syczenie olbrzymiego paj¹ka i chwilê póŸniej nadci¹ga groŸnie wygl¹daj¹cy olbrzymi paj¹k...~
+@56 = ~Naœladujesz odg³os wydawany przez m³od¹ wiwernê i chwilê póŸniej s³yszysz coraz g³oœniejszy ³opot niewielkich skrzyde³...~
+@57 = ~Naœladujesz niski szczekliwy g³os œwistaka i chwilê póŸniej z zaroœli wy³ania siê uroczy zwinny œwistak...~
+@58 = ~Naœladujesz delikatne posapywanie królika i chwilê póŸniej z zaroœli wyskakuje królik...~
+
+//TP2 Copy&Name
+@59 = ~Wezwanie zwierzêcego towarzysza~
+@60 = ~%name%~
+@61 = ~Atak~
+@62 = ~Obronny skowyt~
+@63 = ~Przegryzienie œciêgna~
+@64 = ~Przegryzienie œciêgna: koniec~
+@65 = ~Spowolnienie~
+@66 = ~Pajêczyna~
+@67 = ~Czujnoœæ~
+@68 = ~Chód zygzakiem~
+@69 = ~Znalezienie zwierzêcego towarzysza~
+@70 = ~Zw³oki zwierzêcego towarzysza~
+@71 = ~Czujnoœæ: koniec~

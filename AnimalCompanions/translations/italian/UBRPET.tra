@@ -1,0 +1,82 @@
+//UBRPET0.BAF
+@1 = ~Il tuo compagno animale è morto.~
+@2 = ~Il tuo compagno animale è tornato!~
+
+//UBRPETD.BAF
+@3 = ~Il tuo compagno animale è ancora ferito e ha bisogno di essere curato!~
+
+//UBRPET.BAF
+@4 = ~Il tuo compagno animale è morto!~
+@5 = ~Il tuo compagno animale è diventato più potente!~
+
+//UBRPET.D
+@6 = ~Guardando negli occhi del tuo compagno animale vi scorgi curiosità e simpatia, ma niente paura.~
+@7 = ~È il momento di dare un nome al tuo nuovo amico e di sicuro non ti ci vorrà molto per trovare quello giusto...~
+@8 = ~D'ora in avanti ti chiamerai %name%.~
+@9 = ~Da questo momento il tuo nome sarà %name%. Ti piace, amico mio?~
+@10 = ~Ho deciso che ti chiamerò %name%. Ti piace, mio amico alato?~
+@11 = ~Ho deciso che ti chiamerò %name%. Ti piace, mio piccolo amico?~
+@12 = ~Ti avvicini al tuo compagno animale...~
+@13 = ~%name% solleva la testa in quello che interpreti come un cenno d'approvazione.~
+@14 = ~Bene. Ora che abbiamo chiarito la questione, c'è qualcos'altro che vorrei da te...~
+@15 = ~Adesso ascoltami, %name%, c'è ancora una cosa che vorrei...~
+@16 = ~Ottimo, allora andiamo.~
+@17 = ~Ora dobbiamo andare.~
+@18 = ~%name% scuote la testa in attesa di istruzioni.~
+@19 = ~Voglio che ti comporti in modo naturale. Agisci come faresti normalmente, sia che si stia combattendo o meno.~
+@20 = ~Voglio che continui a comportarti in modo naturale e che tu agisca come faresti normalmente, sia che si stia combattendo o meno.~
+@21 = ~Voglio che tu faccia solo ciò che ti dico, almeno finché non si deve combattere. In quel caso, comportati pure come faresti di solito.~
+@22 = ~Voglio che continui a fare solo cià che ti dico, almeno finché non si deve combattere. In quel caso, continua pure a comportarti come faresti di solito.~
+@23 = ~Voglio che tu faccia solo ciò che ti dico, sia che si stia combattendo o meno. Non importa cosa succede, farai solo quello che ti dico.~
+@24 = ~Voglio che tu continui a fare solo ciò che ti dico, sia che si stia combattendo o meno.~
+@25 = ~%name% ti guarda con espressione fiduciosa e sembra curioso di sapere che cosa tu voglia dal tuo leale amico.~
+@26 = ~Vieni qui, %name%, voglio farti qualche coccola.~
+@27 = ~È tutto a posto, amico mio?~
+@28 = ~È tutto a posto, mio amico alato?~
+@29 = ~È tutto a posto, mio piccolo amico?~
+@30 = ~Vorrei darti due o tre suggerimenti sul tuo comportamento, %name%.~
+@31 = ~Ascolta, %name%, voglio che tu stia per un po' lontano dal gruppo. Resta a portata d'orecchio e ti chiamerò quando dovrai tornare.~
+@32 = ~Passi un po' di tempo a coccolare il tuo amico animale e %name% sembra apprezzare parecchio la cosa.~
+@33 = ~Avrei bisogno di un'altra cosa...~
+@34 = ~È stato divertente, ma adesso dobbiamo andare.~
+@35 = ~%name% ti guarda con espressione triste per un istante prima di voltarsi e di sparire velocemente dalla tua vista.~
+
+//UBRPETA.D
+@36 = ~Decidi che è venuto il momento di cercare per conto tuo il compagno animale adatto.~
+@37 = ~Quando stai per controllare la zona in cerca di tracce animali ...~
+@38 = ~... ti accorgi che non hai abbastanza esperienza per creare un legame duraturo con un animale e decidi di riprovarci quando avrai più esperienza.~
+@39 = ~... ti accorgi che in questa zona non ci sono animali adatti e decidi di attendere un'occasione migliore.~
+@40 = ~... scopri le tracce di un orso bruno e decidi che è esattamente il tipo di animale che stai cercando.~
+@41 = ~... scopri le tracce di un lupo e decidi che è esattamente il tipo di animale che stai cercando.~
+@42 = ~... scopri le tracce di una pantera e decidi che è esattamente il tipo di animale che stai cercando.~
+@43 = ~... scopri le tracce di un leopardo e decidi che è esattamente il tipo di animale che stai cercando.~
+@44 = ~... scopri le tracce di un cane e decidi che è esattamente il tipo di animale che stai cercando.~
+@45 = ~... scopri le tracce di un ragno gigante e decidi che è esattamente il tipo di animale che stai cercando.~
+@46 = ~... scopri le tracce di una giovane viverna e decidi che è esattamente il tipo di animale che stai cercando.~
+@47 = ~... scopri le tracce di una marmotta e decidi che è esattamente il tipo di animale che stai cercando.~
+@48 = ~... scopri le tracce di un coniglio e decidi che è esattamente il tipo di animale che stai cercando.~
+@49 = ~... decidi che non è il momento giusto per cercare un compagno animale.~
+@50 = ~Imiti il ruggito di un orso bruno e dopo qualche istante un orso dall'aspetto robusto e feroce emerge dal sottobosco...~
+@51 = ~Imiti l'ululato di un lupo e dopo qualche istante un lupo dall'aspetto robusto e agile emerge dal sottobosco...~
+@52 = ~Imiti il ruggito di una pantera e dopo qualche istante una pantera dall'aspetto robusto e agile emerge dal sottobosco...~
+@53 = ~Imiti il ruggito di un leoparto e dopo qualche istante un leopardo dall'aspetto robusto e agile emerge dal sottobosco...~
+@54 = ~Imiti il latrato di un cane e dopo qualche istante fa la sua comparsa un cane dallo sguardo intelligente...~
+@55 = ~Imiti il suono sibilante di un ragno gigante e dopo qualche istante fa la sua comparsa un ragno dall'aspetto pericoloso...~
+@56 = ~Imiti il verso di una giovane viverna e dopo qualche istante avverti il battito di piccole ali in avvicinamento...~
+@57 = ~Imiti il confortante verso di una marmotta e dopo qualche istante una marmotta dall'aspetto agile e grazioso emerge dal sottobosco...~
+@58 = ~Imiti il verso di un coniglio e dopo qualche istante un coniglio dall'aspetto agile e grazioso emerge dal sottobosco...~
+
+//TP2 Copy&Name
+@59 = ~Chiama compagno animale~
+@60 = ~%name%~
+@61 = ~Attacco~
+@62 = ~Ululato Difensivo~
+@63 = ~Morso al Tendine~
+@64 = ~Morso al Tendine: Terminato~
+@65 = ~Rallentato~
+@66 = ~Ragnatela~
+@67 = ~Allerta~
+@68 = ~Zig zag~
+@69 = ~Trova Compagno Animale~
+@70 = ~Cadavere di %name%~
+@71 = ~Allerta: Terminata~
