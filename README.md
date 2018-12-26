@@ -4,7 +4,7 @@
 This mod aims to give Rangers (and possibly Druids, should you choose so) some unique flavor by
 allowing them to befriend a permanent animal companion.
 
-**Overview**
+**Overview**  
 With this mod, all ranger/druid characters will gain the 'Find Animal Companion' ability at level 1.
 (Note: Even though your character will gain the ability at level 1, you still need to get to level 3 in order to
 actually have success in finding an animal companion.)  
