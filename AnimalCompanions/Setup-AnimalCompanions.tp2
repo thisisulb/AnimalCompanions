@@ -1,6 +1,7 @@
 BACKUP ~AnimalCompanions/backup~ // So WeiDU Can Uninstall.
 AUTHOR ~Ulb, Mod Forum: http://www.shsforums.net/topic/56242-animal-companions~// Contact Address Displayed If Installation Fails.
 README ~AnimalCompanions/AnimalCompanions.pdf~ // Shows Readme File.
+VERSION ~1.6~
 
 ALWAYS
   // Borrowed from Edwin Romance: convert strings to UTF-8 for BGEE/BG2EE
